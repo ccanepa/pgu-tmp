@@ -339,7 +339,6 @@ class Container(widget.Widget):
         if self.myfocus: self.blur(self.myfocus)
         if self.myhover is not w: self.enter(w)
         self.myfocus = w
-        print("C focus:", w.dname)
         w._event(pygame.event.Event(FOCUS))
 
         #print self.myfocus,self.myfocus.__class__.__name__
